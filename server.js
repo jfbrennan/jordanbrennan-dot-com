@@ -12,8 +12,7 @@ var app = express().configure(function () {
     defaultLayout: "main",
     extname: ".hbs",
     partialsDir: "views/partials/",
-    layoutsDir: "views/layouts/",
-    helpers: require("./public/js/libs/handlebars.helpers.js").helpers
+    layoutsDir: "views/layouts/"
 })).set("view engine", "hbs");
 
 
