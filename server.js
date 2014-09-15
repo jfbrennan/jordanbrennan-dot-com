@@ -18,5 +18,5 @@ var app = express().configure(function () {
 
 // Routes
 app.get('/', function (req, res) {
-    res.render('/index');
+    res.render('index');
 });
