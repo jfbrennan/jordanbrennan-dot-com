@@ -7,7 +7,7 @@ var app = express().configure(function () {
     this.use(express.logger('dev'));
     this.use('/public', express.static('public'));
     this.use(express.bodyParser());
-    this.listen(5000);
+    this.listen(process.env.PORT ||5000);
 }).engine("hbs", Handlebars({
     defaultLayout: "main",
     extname: ".hbs",
