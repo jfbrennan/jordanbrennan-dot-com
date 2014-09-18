@@ -1,0 +1,56 @@
+body, html {
+    padding: 0;
+    margin: 0;
+    background-color: whitesmoke;
+}
+
+h1 {
+    text-shadow: 0px 1px 0px white;
+}
+
+/* Sidebar */
+#sidebar {
+    float: left;
+    padding: 10px 20px 20px 40px;
+}
+
+.nav {
+    padding: 20px 5px 20px 5px;
+    border-bottom: 1px dotted lightslategray;
+}
+.nav:last-child {
+    border-bottom: none;
+}
+
+#work-experience-selector {
+    font-size: 26px;
+}
+
+/* Showcase */
+#work-experience-showcase {
+    overflow: auto;
+    padding: 20px 20px 20px 20px;
+    margin-left: 40px;
+    float: left;
+}
+
+#work-experience-info > h2,
+#work-experience-info > p {
+    text-align: center;
+    text-shadow: 0px 1px 0px white;
+}
+
+#work-experience-iframe-wrapper > iframe {
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: 980px;
+    min-height: 800px;
+    box-shadow: 0px 0px 6px rgba(0,0,0,0.5)
+}
+#work-experience-iframe-wrapper.iframe-wait > iframe {
+    visibility: hidden;
+}
+#work-experience-iframe-wrapper.iframe-wait {
+    background: url('../images/spinner.gif') no-repeat;
+}
