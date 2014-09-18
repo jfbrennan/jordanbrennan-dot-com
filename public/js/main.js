@@ -27,11 +27,11 @@ $(document).ready(function () {
         var we = WorkExperience[$(this).val()];
 
         $weIframeWrapper.addClass('iframe-wait');
+        $weIframe.attr('src', we.url);
         $('option.default').attr('disabled', 'disabled');
 
         $('#work-experience-info h2').text(we.name);
         $('#work-experience-info p').text(we.desc);
-        $weIframe.attr('src', we.url);
 
         $('#work-experience-showcase').removeClass('hidden');
     });
