@@ -1,7 +1,7 @@
 var WorkExperience = {
-    BlueNile: {name: "Blue Nile", desc: "Front-end dev for market-leading eCommerce brand.", url: "http://www.bluenile.com/"},
+    BlueNile: {name: "Blue Nile", desc: "Full-stack Developer for market-leading eCommerce brand.", url: "http://www.bluenile.com/"},
     Expeditors: {name: "Expeditors", desc: "Internal tools design and development. Sorry, NDA. But here's their website:", url: "http://expeditors.com/"},
-    Avue: {name: "Avue Technologies", desc: "Front-end dev and design for enterprise web app. (Plus lots of SaaS tools, but under strict NDA.)", url: "https://www.avuecentral.com/casting/aiportal/control/mainmenu"},
+    Avue: {name: "Avue Technologies", desc: "Front-end Developer and design for enterprise web app. (Plus lots of SaaS tools, but under strict NDA.)", url: "https://www.avuecentral.com/casting/aiportal/control/mainmenu"},
     Pierce: {name: "Pierce College", desc: "Large site redesign.", url: "http://www.pierce.ctc.edu/"}
 };
 
