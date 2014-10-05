@@ -1,0 +1,49 @@
+@fontColor: white;
+
+#header {
+  color: @fontColor;
+//  background-image: url("http://placehold.it/1200x1200/611717&text=.");
+  background: url("../images/header-bg.jpg") no-repeat center;
+  background-size: cover;
+}
+
+#dancing-man {
+  display: table;
+  .stroked {
+    .text-stroke(@fontColor, 1px);
+  }
+}
+
+#support-bar {
+  .dark-theme();
+}
+
+#main-links {
+  display: table;
+  text-align: center;
+  a, a:hover, a:active, a:visited {
+    text-transform: uppercase;
+    font-size: 26px;
+    color: @fontColor;
+  }
+  > li {
+    padding: 10px 20px 10px 20px;
+    display: inline-block;
+  }
+}
+
+#mix-free {
+  > h1 {
+    font-size: 240px;
+    font-weight: bold;
+    letter-spacing: -10;
+    &.stroked {
+      .text-stroke(@fontColor, 3px);
+    }
+  }
+}
+
+#intro-text {
+  margin: 0 auto;
+  width: 400px;
+}

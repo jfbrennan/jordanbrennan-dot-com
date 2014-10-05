@@ -1,0 +1,15 @@
+.dark-theme() {
+  color: white;
+  background-color: @gray-darker;
+  a, a:hover, a:active, a:visited {
+    color: white;
+  }
+
+}
+
+
+.text-stroke(@color: white; @width: 3px; @fill: rgba(0, 0, 0, 0.0);) {
+  -webkit-text-stroke: @width @color;
+  text-stroke: @width @color;
+  color: @fill;
+}

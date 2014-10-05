@@ -1,0 +1,9 @@
+<ul class="feature-list list-group">
+    {{#each this}}
+        <li class="list-group-item">
+            <h3 class="pull-left">{{#if footnote}}*{{else}}{{count}}{{/if}}</h3>
+            <h4 class="list-group-item-heading">{{title}}</h4>
+            <p class="list-group-item-text">{{text}}</p>
+        </li>
+    {{/each}}
+</ul>

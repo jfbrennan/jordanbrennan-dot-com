@@ -1,6 +1,7 @@
 // Imports
 var express = require('express'),
-    Handlebars = require('express-handlebars');
+    Handlebars = require('express-handlebars'),
+    content = require('./content/home');
 
 // Config
 var app = express().configure(function () {
@@ -20,3 +21,13 @@ var app = express().configure(function () {
 app.get('/', function (req, res) {
     res.render('index');
 });
+
+// Mackie
+app.get('/demo', function (req, res) {
+    if (req.query.client === "mackie") {
+        res.render('mackie', {content: content, layout: "mackie"});
+    }
+    else {
+        res.status(404).send('Not found');
+    }
+});;

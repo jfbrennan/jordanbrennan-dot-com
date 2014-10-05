@@ -1,0 +1,82 @@
+@backgroundColor: @gray-light;
+body {
+  background-color: @backgroundColor;
+  font-family: "Lucida Grande", "Helvetic Neue", "Arial", sans-serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.info-box {
+  > h5 {
+    color: @gray;
+    text-transform: uppercase;
+  }
+  > h3 {
+
+  }
+  > p {
+
+  }
+}
+
+.dot {
+  position: relative;
+  display: table;
+  padding: 20px;
+  width: 200px;
+  height: 200px;
+  background: url("../images/dot.png") no-repeat center;
+  background-size: cover;
+  > h4 {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    color: #ffffff;
+  }
+}
+
+.guide {
+  border: 1px solid lime;
+}
+
+.video {
+  width: 170px;
+}
+
+.feature-list {
+  .list-group-item {
+    .border-top-radius(0);
+    .border-bottom-radius(0);
+    border-color: @backgroundColor;
+    background-color: @gray-lighter;
+  }
+}
+
+
+#footer {
+  .dark-theme();
+  padding-bottom: 50px;
+}
+
+#footer-videos {
+  > h3 {
+    padding-left: 20px;
+  }
+}
+
+#footer-links {
+}
+
+#app-store-badge {
+  padding: 10px;
+}
+
+#video-thumbs {
+  > li {
+    display: inline-block;
+  }
+}

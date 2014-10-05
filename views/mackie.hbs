@@ -1,0 +1,75 @@
+{{> header content.header}}
+
+{{#with content.body.hardware}}
+    <div id="hardware" class="guide row">
+        <div class="col-md-6">
+            <img src="public/images/mixer.png" width="280" height="149">
+            <div class="dot" style="top: -100;"><h4>Ultra-Compact 3U Rackmount Design</h4></div>
+            <div class="pull-right">{{> video-thumb}}</div>
+        </div>
+        <div class="col-md-6">
+            {{> info-box mainCopy}}
+        </div>
+    </div>
+{{/with}}
+
+{{#with content.body.wireless}}
+    <div id="wireless" class="guide row">
+        <div class="col-md-6">
+            <div class="pull-right text-right">{{> info-box mainCopy}}</div>
+            <div class="dot" style="top: 100;"><h4>Ultra-Compact 3U Rackmount Design</h4></div>
+            <div class="pull-right">{{> video-thumb}}</div>
+        </div>
+        <div class="col-md-6">
+            <img src="http://placehold.it/450x500" width="450" height="500">
+            {{> feature-list features}}</div>
+    </div>
+{{/with}}
+
+{{#with content.body.recordPlay}}
+    <div id="hardware" class="guide row">
+        <div class="col-md-6">
+            <img src="http://placehold.it/440x330" width="440" height="330">
+            {{> feature-list features}}</div>
+        <div class="col-md-6">
+            {{> info-box mainCopy}}
+            <img src="http://placehold.it/540x400" width="540" height="400">
+
+            {{> video-thumb}}
+        </div>
+    </div>
+{{/with}}
+
+{{#with content.body.dsp}}
+    <div id="wireless" class="guide row">
+        <div class="col-md-6">
+            {{> info-box mainCopy}}
+            {{> video-thumb}}
+        </div>
+        <div class="col-md-6">{{> feature-list features}}
+            <img src="http://placehold.it/440x350" width="440" height="350">
+        </div>
+    </div>
+{{/with}}
+
+{{#with content.body.masterFader}}
+    <div id="hardware" class="guide row">
+        <div class="col-md-6">
+            <div class="clearfix">
+                <img class="pull-right" src="http://placehold.it/469x595">
+            </div>
+            <div class="clearfix">
+                <span class="pull-right">{{> video-thumb}}</span>
+                <a class="pull-right" href="#app-store">
+                    <img id="app-store-badge" src="public/images/app-store-badge.svg">
+                </a>
+            </div>
+        </div>
+        <div class="col-md-6">
+            {{> info-box mainCopy}}
+            {{> feature-list features}}
+        </div>
+    </div>
+{{/with}}
+
+{{> footer}}
