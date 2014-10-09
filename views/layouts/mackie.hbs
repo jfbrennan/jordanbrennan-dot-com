@@ -11,5 +11,15 @@
         <script src="/public/js/libs/underscore.js"></script>
         <script src="/public/js/libs/backbone.js"></script>
         <script src="/public/js/libs/backbone-nested.js"></script>
+
+        <script>
+            $(document).on('click', '.video', function () {
+                var src = "//www.youtube.com/embed/" + this.id + "?html5=1";
+                var $videoModal = $('#video-modal');
+
+                $videoModal.find('iframe').attr('src', src);
+                $videoModal.modal('show');
+            });
+        </script>
     </body>
 </html>

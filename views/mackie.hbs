@@ -1,75 +1,90 @@
-{{> header content.header}}
+<div id="site-container">
+    {{> header content.header}}
 
-{{#with content.body.hardware}}
-    <div id="hardware" class="guide row">
-        <div class="col-md-6">
-            <img src="public/images/mixer.png" width="280" height="149">
-            <div class="dot" style="top: -100;"><h4>Ultra-Compact 3U Rackmount Design</h4></div>
-            <div class="pull-right">{{> video-thumb}}</div>
-        </div>
-        <div class="col-md-6">
-            {{> info-box mainCopy}}
-        </div>
-    </div>
-{{/with}}
-
-{{#with content.body.wireless}}
-    <div id="wireless" class="guide row">
-        <div class="col-md-6">
-            <div class="pull-right text-right">{{> info-box mainCopy}}</div>
-            <div class="dot" style="top: 100;"><h4>Ultra-Compact 3U Rackmount Design</h4></div>
-            <div class="pull-right">{{> video-thumb}}</div>
-        </div>
-        <div class="col-md-6">
-            <img src="http://placehold.it/450x500" width="450" height="500">
-            {{> feature-list features}}</div>
-    </div>
-{{/with}}
-
-{{#with content.body.recordPlay}}
-    <div id="hardware" class="guide row">
-        <div class="col-md-6">
-            <img src="http://placehold.it/440x330" width="440" height="330">
-            {{> feature-list features}}</div>
-        <div class="col-md-6">
-            {{> info-box mainCopy}}
-            <img src="http://placehold.it/540x400" width="540" height="400">
-
-            {{> video-thumb}}
-        </div>
-    </div>
-{{/with}}
-
-{{#with content.body.dsp}}
-    <div id="wireless" class="guide row">
-        <div class="col-md-6">
-            {{> info-box mainCopy}}
-            {{> video-thumb}}
-        </div>
-        <div class="col-md-6">{{> feature-list features}}
-            <img src="http://placehold.it/440x350" width="440" height="350">
-        </div>
-    </div>
-{{/with}}
-
-{{#with content.body.masterFader}}
-    <div id="hardware" class="guide row">
-        <div class="col-md-6">
-            <div class="clearfix">
-                <img class="pull-right" src="http://placehold.it/469x595">
+    {{#with content.body.hardware}}
+        <div id="hardware" class="guide row">
+            <div class="col-sm-6 relative">
+                <img src="public/images/mixer.png" width="560" height="290">
+                <div class="dot dot-lg"><h4>hardware Ultra-Compact 3U Rackmount Design</h4></div>
+                <div class="pull-right">{{> video-thumb video}}</div>
             </div>
-            <div class="clearfix">
-                <span class="pull-right">{{> video-thumb}}</span>
-                <a class="pull-right" href="#app-store">
-                    <img id="app-store-badge" src="public/images/app-store-badge.svg">
-                </a>
+            <div class="col-sm-6">
+                {{> info-box mainCopy}}
+                {{#each features.items}}
+                    <div class="hardware-count">
+                        <img src="{{imgUrl}}" width="286" height="190">
+                        <div>
+                            <h3 class="count">{{{count}}}</h3>
+                            <div>{{{text}}}</div>
+                        </div>
+                    </div>
+                {{/each}}
             </div>
         </div>
-        <div class="col-md-6">
-            {{> info-box mainCopy}}
-            {{> feature-list features}}
+    {{/with}}
+    <div class="section-separator first"></div>
+    {{#with content.body.wireless}}
+        <div id="wireless" class="guide row">
+            <div class="col-sm-6">
+                <div class="pull-right text-right">{{> info-box mainCopy}}</div>
+                <div class="pull-right">{{> video-thumb video}}</div>
+            </div>
+            <div class="col-sm-6 relative">
+                <img src="http://placehold.it/730x510" width="730" height="510">
+                {{> feature-list features}}
+                <div class="dot dot-lg"><h4>wireless Ultra-Compact 3U Rackmount Design</h4></div>
+            </div>
         </div>
-    </div>
-{{/with}}
-
-{{> footer}}
+    {{/with}}
+    <div class="section-separator second"></div>
+    {{#with content.body.recordPlay}}
+        <div id="record-play" class="guide row">
+            <div class="col-sm-6 relative">
+                <img class="pull-right" src="http://placehold.it/440x400" width="440" height="400">
+                <div class="dot dot-lg"><h4> recordplay Ultra-Compact 3U Rackmount Design</h4></div>
+                <div class="pull-right">{{> feature-list features}}</div>
+            </div>
+            <div class="col-sm-6">
+                {{> info-box mainCopy}}
+                {{> video-thumb video}}
+            </div>
+        </div>
+    {{/with}}
+    <div class="section-separator third"></div>
+    {{#with content.body.dsp}}
+        <div id="dsp" class="guide row">
+            <div class="col-sm-6 relative">
+                <div class="pull-right text-right">{{> info-box mainCopy}}</div>
+                {{> video-thumb video}}
+                <div class="dot dot-sm"><h4>dsp Ultra-Compact 3U Rackmount Design</h4></div>
+            </div>
+            <div class="col-sm-6">{{> feature-list features}}
+                <img src="http://placehold.it/440x380" width="440" height="380">
+            </div>
+        </div>
+    {{/with}}
+    <div class="section-separator fourth"></div>
+    {{#with content.body.masterFader}}
+        <div id="master-fader" class="guide row">
+            <div class="col-sm-6">
+                <div class="clearfix">
+                    <img class="pull-right" src="http://placehold.it/470x600">
+                </div>
+                <div class="clearfix">
+                    <span class="pull-right">{{> video-thumb video}}</span>
+                    <a class="pull-right" href="#app-store">
+                        <img id="app-store-badge" src="public/images/app-store-badge.svg">
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                {{> info-box mainCopy}}
+                {{> feature-list features}}
+            </div>
+        </div>
+    {{/with}}
+    <div class="section-separator fourth"></div>
+    {{> footer content.footer}}
+</div>
+<!-- templates -->
+{{> video-modal}}

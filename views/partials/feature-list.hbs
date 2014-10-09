@@ -1,9 +1,9 @@
-<ul class="feature-list list-group">
-    {{#each this}}
+<ul class="feature-list list-group {{#if withCount}}feature-list-with-count{{/if}}">
+    {{#each items}}
         <li class="list-group-item">
-            <h3 class="pull-left">{{#if footnote}}*{{else}}{{count}}{{/if}}</h3>
-            <h4 class="list-group-item-heading">{{title}}</h4>
-            <p class="list-group-item-text">{{text}}</p>
+            <h3 class="pull-left {{#if count}}count{{/if}} {{#if footnote}}footnote{{/if}}">{{{footnote}}}{{{count}}}</h3>
+            <h4 class="list-group-item-heading">{{{title}}}</h4>
+            <p class="list-group-item-text">{{{text}}}</p>
         </li>
     {{/each}}
 </ul>
