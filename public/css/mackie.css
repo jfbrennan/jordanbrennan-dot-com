@@ -6190,9 +6190,9 @@ ul {
   position: relative;
 }
 .dot {
-  position: absolute;
+  position: relative;
   display: table;
-  padding: 20px;
+  padding: 50px;
   background: url("../images/dot.png") no-repeat center;
   background-size: cover;
 }
@@ -6211,7 +6211,7 @@ ul {
   height: 275px;
 }
 .guide {
-  border: 1px solid lime;
+  border: 1px dotted lightcyan;
 }
 .video {
   width: 170px;
@@ -6273,72 +6273,7 @@ ul {
 .row {
   height: 700px;
   position: relative;
-  z-index: 1000;
-}
-#hardware {
-  background: url("../images/hardware-shape.png") no-repeat center;
-  height: 698px;
-  margin-top: -180px;
-}
-#hardware .dot {
-  top: 115;
-  left: 79;
-}
-#wireless {
-  background: url("../images/wireless-shape.png") no-repeat center;
-  height: 698px;
-  margin-top: -180px;
-}
-#wireless .dot {
-  top: 500;
-  left: 300;
-}
-#record-play {
-  background: url("../images/record-play-shape.png") no-repeat center;
-  height: 719px;
-  margin-top: -180px;
-}
-#record-play .dot {
-  top: 350;
-  left: 100;
-}
-#dsp {
-  background: url("../images/dsp-shape.png") no-repeat center;
-  height: 772px;
-  margin-top: -180px;
-}
-#dsp .dot {
-  top: 500;
-  left: 300;
-}
-#master-fader {
-  background: url("../images/master-fader-shape.png") no-repeat center;
-  height: 896px;
-  margin-top: -180px;
-}
-#master-fader .dot {
-  top: 500;
-  left: 300;
-}
-#footer {
-  color: white;
-  background-color: #689430;
-  padding-bottom: 50px;
-}
-#footer a,
-#footer a:hover,
-#footer a:active,
-#footer a:visited {
-  color: white;
-}
-#footer-videos > h3 {
-  padding-left: 20px;
-}
-#app-store-badge {
-  padding: 10px;
-}
-#video-thumbs > li {
-  display: inline-block;
+  z-index: 100;
 }
 #header {
   color: #ffffff;
@@ -6393,4 +6328,120 @@ ul {
 #intro-text {
   margin: 0 auto;
   width: 400px;
+}
+#footer {
+  color: white;
+  background-color: #689430;
+  padding-bottom: 50px;
+}
+#footer a,
+#footer a:hover,
+#footer a:active,
+#footer a:visited {
+  color: white;
+}
+#footer-videos > h3 {
+  padding-left: 20px;
+}
+#app-store-badge {
+  padding: 10px;
+}
+#video-thumbs > li {
+  display: inline-block;
+}
+#hardware {
+  background: url("../images/hardware-shape.png") no-repeat center;
+  height: 698px;
+  margin-top: -180px;
+}
+#hardware .copy-and-features {
+  position: relative;
+  top: 80;
+}
+#hardware .mixer-img {
+  position: relative;
+  top: 180;
+}
+#hardware .dot {
+  top: 295;
+  left: 79;
+}
+#hardware .video {
+  position: relative;
+  top: 150;
+}
+#wireless {
+  background: url("../images/wireless-shape.png") no-repeat center;
+  height: 698px;
+  margin-top: -180px;
+}
+#wireless .copy-and-features {
+  position: relative;
+  top: 130;
+}
+#wireless .copy-and-features .video {
+  float: right;
+  text-align: left;
+}
+#wireless .feature-list {
+  position: relative;
+  top: -140;
+  z-index: 101;
+}
+#wireless .dot {
+  top: -310;
+  left: 270;
+  z-index: 103;
+}
+#wireless .ipad-landscape-view {
+  position: relative;
+  z-index: 102;
+}
+#record-play {
+  background: url("../images/record-play-shape.png") no-repeat center;
+  height: 719px;
+  margin-top: -180px;
+}
+#record-play .dot {
+  top: -45;
+  left: 60;
+}
+#record-play .thing {
+  position: relative;
+  top: -250;
+  left: 20;
+}
+#record-play .copy-and-features {
+  position: relative;
+  top: 100;
+}
+#dsp {
+  background: url("../images/dsp-shape.png") no-repeat center;
+  height: 772px;
+  margin-top: -180px;
+}
+#dsp .copy-and-features {
+  position: relative;
+  top: 130;
+}
+#dsp .copy-and-features .video {
+  text-align: left;
+}
+#dsp .dot {
+  top: -100;
+  left: 500;
+  z-index: 101;
+}
+#master-fader {
+  background: url("../images/master-fader-shape.png") no-repeat center;
+  height: 896px;
+  margin-top: -180px;
+}
+#master-fader .dot {
+  top: 500;
+  left: 300;
+}
+#master-fader .copy-and-features {
+  position: relative;
+  top: 160;
 }

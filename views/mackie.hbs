@@ -4,21 +4,23 @@
     {{#with content.body.hardware}}
         <div id="hardware" class="guide row">
             <div class="col-sm-6 relative">
-                <img src="public/images/mixer.png" width="560" height="290">
+                <img class="mixer-img" src="public/images/mixer.png" width="560" height="290">
                 <div class="dot dot-lg"><h4>hardware Ultra-Compact 3U Rackmount Design</h4></div>
                 <div class="pull-right">{{> video-thumb video}}</div>
             </div>
             <div class="col-sm-6">
-                {{> info-box mainCopy}}
-                {{#each features.items}}
-                    <div class="hardware-count">
-                        <img src="{{imgUrl}}" width="286" height="190">
-                        <div>
-                            <h3 class="count">{{{count}}}</h3>
-                            <div>{{{text}}}</div>
+                <div class="copy-and-features">
+                    {{> info-box mainCopy}}
+                    {{#each features.items}}
+                        <div class="hardware-count">
+                            <img src="{{imgUrl}}" width="286" height="190">
+                            <div>
+                                <h3 class="count">{{{count}}}</h3>
+                                <div>{{{text}}}</div>
+                            </div>
                         </div>
-                    </div>
-                {{/each}}
+                    {{/each}}
+                </div>
             </div>
         </div>
     {{/with}}
@@ -26,13 +28,15 @@
     {{#with content.body.wireless}}
         <div id="wireless" class="guide row">
             <div class="col-sm-6">
-                <div class="pull-right text-right">{{> info-box mainCopy}}</div>
-                <div class="pull-right">{{> video-thumb video}}</div>
+                <div class="pull-right text-right copy-and-features">
+                    {{> info-box mainCopy}}
+                    {{> video-thumb video}}
+                </div>
             </div>
             <div class="col-sm-6 relative">
-                <img src="http://placehold.it/730x510" width="730" height="510">
+                <img class="ipad-landscape-view" src="public/images/ipad-landscape-view.png" width="730" height="510">
                 {{> feature-list features}}
-                <div class="dot dot-lg"><h4>wireless Ultra-Compact 3U Rackmount Design</h4></div>
+                <div class="dot dot-lg"><h4>Ditch the snake, play your mixer anywhere!</h4></div>
             </div>
         </div>
     {{/with}}
@@ -41,12 +45,12 @@
         <div id="record-play" class="guide row">
             <div class="col-sm-6 relative">
                 <img class="pull-right" src="http://placehold.it/440x400" width="440" height="400">
-                <div class="dot dot-lg"><h4> recordplay Ultra-Compact 3U Rackmount Design</h4></div>
-                <div class="pull-right">{{> feature-list features}}</div>
+                <div class="dot dot-sm"><h4>USB 2.0 for Mac & PC</h4></div>
+                <div class="pull-right thing">{{> feature-list features}}</div>
             </div>
             <div class="col-sm-6">
-                {{> info-box mainCopy}}
-                {{> video-thumb video}}
+                <div class="copy-and-features">{{> info-box mainCopy}}
+                    {{> video-thumb video}}</div>
             </div>
         </div>
     {{/with}}
@@ -54,9 +58,11 @@
     {{#with content.body.dsp}}
         <div id="dsp" class="guide row">
             <div class="col-sm-6 relative">
-                <div class="pull-right text-right">{{> info-box mainCopy}}</div>
-                {{> video-thumb video}}
-                <div class="dot dot-sm"><h4>dsp Ultra-Compact 3U Rackmount Design</h4></div>
+                <div class="pull-right text-right copy-and-features">
+                    {{> info-box mainCopy}}
+                    {{> video-thumb video}}
+                    <div class="dot dot-sm"><h4>dsp Ultra-Compact 3U Rackmount Design</h4></div>
+                </div>
             </div>
             <div class="col-sm-6">{{> feature-list features}}
                 <img src="http://placehold.it/440x380" width="440" height="380">
@@ -78,13 +84,14 @@
                 </div>
             </div>
             <div class="col-sm-6">
-                {{> info-box mainCopy}}
-                {{> feature-list features}}
+                <div class="copy-and-features">
+                    {{> info-box mainCopy}}
+                    {{> feature-list features}}
+                </div>
             </div>
         </div>
     {{/with}}
     <div class="section-separator fourth"></div>
     {{> footer content.footer}}
-</div>
-<!-- templates -->
+</div><!-- templates -->
 {{> video-modal}}
