@@ -6270,11 +6270,6 @@ ul {
 .section-separator.fourth {
   margin-top: -180px;
 }
-.row {
-  height: 700px;
-  position: relative;
-  z-index: 100;
-}
 #header #nav-bar {
   text-transform: uppercase;
   padding: 10px;
@@ -6331,6 +6326,10 @@ ul {
 }
 #video-thumbs > li {
   display: inline-block;
+}
+.row {
+  position: relative;
+  z-index: 100;
 }
 #intro {
   height: 1000px;
