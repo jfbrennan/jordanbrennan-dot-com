@@ -1,6 +1,24 @@
 <div id="site-container">
     {{> header content.header}}
-
+    {{#with content.body.intro}}
+        <div id="intro">
+            <div id="dancing-man" class="center-block">
+                <img src="http://placehold.it/50x50" class="pull-left">
+                <h1 class="pull-left">
+                    <span class="stroked">DL</span>
+                    <span>32R</span>
+                </h1>
+            </div>
+            <div id="main-links-divider" class="text-center">
+                <img src="http://placehold.it/800x10" width="800" height="10">
+            </div>
+            <div id="mix-free" class="text-center">
+                <h2>{{{tagline1}}}</h2>
+                <h1 class="stroked">{{{tagline2}}}</h1>
+            </div>
+            <p id="intro-text" class="text-center">The Mackie DL32R is a powerful 32-channel digital mixer completely controlled wirelessly from Mackie's intiutitvie Master Fader iPad app, freeing you to get in the mix like never before.</p>
+        </div>
+    {{/with}}
     {{#with content.body.hardware}}
         <div id="hardware" class="guide row">
             <div class="col-sm-6 relative">
@@ -84,10 +102,8 @@
                 </div>
             </div>
             <div class="col-sm-6">
-                <div class="copy-and-features">
-                    {{> info-box mainCopy}}
-                    {{> feature-list features}}
-                </div>
+                <div class="copy-and-features">{{> info-box mainCopy}}
+                    {{> feature-list features}}</div>
             </div>
         </div>
     {{/with}}

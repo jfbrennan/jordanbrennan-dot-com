@@ -1,11 +1,15 @@
 exports.header = {
     support: {
         url: "support",
-        label: "DL32R RESOURCES & SUPPORT"
+        label: "Resources"
     }
 };
 
 exports.body = {
+    intro: {
+        tagline1: "Control Anything From",
+        tagline2: "Anywhere"
+    },
     hardware: {
         video: {
             id: "iJ4T9CQA0UM",

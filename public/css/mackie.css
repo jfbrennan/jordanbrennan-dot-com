@@ -6275,59 +6275,42 @@ ul {
   position: relative;
   z-index: 100;
 }
-#header {
-  color: #ffffff;
-  background: url("../images/header-bg.jpg") no-repeat center;
-  background-size: cover;
-  height: 1000px;
-}
-#dancing-man {
-  display: table;
-}
-#dancing-man .stroked {
-  -webkit-text-stroke: 1px #ffffff;
-  text-stroke: 1px #ffffff;
-  color: rgba(0, 0, 0, 0);
-}
-#support-bar {
+#header #nav-bar {
+  text-transform: uppercase;
+  padding: 10px;
   color: white;
   background-color: #689430;
 }
-#support-bar a,
-#support-bar a:hover,
-#support-bar a:active,
-#support-bar a:visited {
+#header #nav-bar a,
+#header #nav-bar a:hover,
+#header #nav-bar a:active,
+#header #nav-bar a:visited {
   color: white;
 }
-#main-links {
-  display: table;
+#header #nav-bar #main-links {
+  float: left;
+}
+#header #nav-bar #resources {
+  float: right;
+}
+.nav-links {
+  display: inline-block;
   text-align: center;
 }
-#main-links a,
-#main-links a:hover,
-#main-links a:active,
-#main-links a:visited {
+.nav-links a,
+.nav-links a:hover,
+.nav-links a:active,
+.nav-links a:visited {
   text-transform: uppercase;
-  font-size: 26px;
   color: #ffffff;
 }
-#main-links > li {
-  padding: 10px 20px 10px 20px;
+.nav-links > li {
+  padding: 0px 20px 0px 20px;
   display: inline-block;
+  border-left: 1px solid #777777;
 }
-#mix-free > h1 {
-  font-size: 240px;
-  font-weight: bold;
-  letter-spacing: -10;
-}
-#mix-free > h1.stroked {
-  -webkit-text-stroke: 3px #ffffff;
-  text-stroke: 3px #ffffff;
-  color: rgba(0, 0, 0, 0);
-}
-#intro-text {
-  margin: 0 auto;
-  width: 400px;
+.nav-links > li:first-child {
+  border-left: none;
 }
 #footer {
   color: white;
@@ -6348,6 +6331,41 @@ ul {
 }
 #video-thumbs > li {
   display: inline-block;
+}
+#intro {
+  height: 1000px;
+  color: #ffffff;
+  background: url("../images/header-bg.jpg") no-repeat center;
+  background-size: cover;
+}
+#intro #dancing-man {
+  display: table;
+}
+#intro #dancing-man .stroked {
+  -webkit-text-stroke: 1px #ffffff;
+  text-stroke: 1px #ffffff;
+  color: rgba(0, 0, 0, 0);
+}
+#intro #mix-free {
+  font-weight: bold;
+  letter-spacing: -10;
+  text-transform: uppercase;
+  margin-bottom: 200px;
+}
+#intro #mix-free > h2 {
+  font-size: 60px;
+}
+#intro #mix-free > h1 {
+  font-size: 200px;
+}
+#intro #mix-free > h1.stroked {
+  -webkit-text-stroke: 3px #ffffff;
+  text-stroke: 3px #ffffff;
+  color: rgba(0, 0, 0, 0);
+}
+#intro #intro-text {
+  margin: 0 auto;
+  width: 400px;
 }
 #hardware {
   background: url("../images/hardware-shape.png") no-repeat center;
