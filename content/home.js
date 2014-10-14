@@ -119,7 +119,6 @@ exports.body = {
                 },
                 {
                     count: "03",
-                    title: "Collaborate",
                     text: "Stereo FX processors with tons of great-sounding reverbs and delays plus dedicated sends & returns"
                 },
                 {
@@ -144,19 +143,24 @@ exports.body = {
         features: {
             items: [
                 {
+                    id: "fast_navigation_img",
+                    imgUrl: "public/images/master-fader/fast_navigation_img.png",
                     text: "<b>Fast navigation</b> with view groups and overview"
                 },
                 {
-                    title: "Collaborate",
+                    id: "quick_setup_img",
+                    imgUrl: "public/images/master-fader/quick_setup_img.png",
                     text: "<b>Quick setup</b> with tons of factory and user-definable presets"
                 },
                 {
-                    title: "Collaborate",
-                    text: "Access limiting prevents unwanted adjustments"
+                    id: "access_limiting_img",
+                    imgUrl: "public/images/master-fader/access_limiting_img.png",
+                    text: "<b>Access limiting</b> prevents unwanted adjustments"
                 },
                 {
-                    title: "Collaborate",
-                    text: "Complete offline operation for simple setup"
+                    id: "complete_offline_oper_img",
+                    imgUrl: "public/images/master-fader/complete_offline_oper_img.png",
+                    text: "<b>Complete offline</b> operation for simple setup"
                 }
             ]
         }
