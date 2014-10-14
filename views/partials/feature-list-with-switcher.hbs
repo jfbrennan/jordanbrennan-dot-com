@@ -1,9 +1,8 @@
-<ul class="feature-list list-group {{#if withCount}}feature-list-with-count{{/if}}">
+<div class="feature-list feature-list-with-switcher list-group">
     {{#each items}}
-        <li class="list-group-item">
-            <h3 class="pull-left {{#if count}}count{{/if}} {{#if footnote}}footnote{{/if}}">{{{footnote}}}{{{count}}}</h3>
-            <h4 class="list-group-item-heading">{{{title}}}</h4>
+        <a data-id="{{id}}" data-img-url="{{imgUrl}}" href="#" class="list-group-item {{#if @first}}active{{/if}}">
+            <h3 class="pull-left"><span class="glyphicon glyphicon-chevron-left"></span></h3>
             <p class="list-group-item-text">{{{text}}}</p>
-        </li>
+        </a>
     {{/each}}
-</ul>
+</div>

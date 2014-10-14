@@ -9,14 +9,6 @@
         {{{body}}}
         <script src="/public/js/libs/jquery.js"></script>
         <script src="/public/js/libs/bootstrap.min.js"></script>
-        <script>
-            $(document).on('click', '.video', function () {
-                var src = "//www.youtube.com/embed/" + this.id + "?html5=1";
-                var $videoModal = $('#video-modal');
-
-                $videoModal.find('iframe').attr('src', src);
-                $videoModal.modal('show');
-            });
-        </script>
+        <script src="/public/js/mackie.js"></script>
     </body>
 </html>

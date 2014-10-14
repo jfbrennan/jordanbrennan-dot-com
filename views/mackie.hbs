@@ -82,12 +82,16 @@
     {{#with content.body.masterFader}}
         <div id="master-fader" class="row">
             <div class="col-sm-6">
-                <div id="master-fader-images"><img class="pull-right" src="http://placehold.it/470x600" width="665" height="545"></div>
+                <div id="master-fader-images">
+                    {{#each features.items}}
+                        <img id="{{id}}" class="pull-right {{#if @first}}active{{else}}invisible{{/if}}" src="{{imgUrl}}" width="665" height="545">
+                    {{/each}}
+                </div>
             </div>
             <div class="col-sm-6">
                 <div class="copy-and-features">
                     {{> info-box mainCopy}}
-                    {{> feature-list features}}
+                    {{> feature-list-with-switcher features}}
                     <div class="pull-left app-and-video">
                         <a href="#app-store">
                             <img id="app-store-badge" src="public/images/app-store-badge.svg">

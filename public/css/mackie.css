@@ -6322,6 +6322,29 @@ ul {
   font-size: 66px;
   color: #7ac143;
 }
+.feature-list.feature-list-with-switcher .active {
+  color: white;
+  background-color: #7ac143;
+}
+.feature-list.feature-list-with-switcher .active a,
+.feature-list.feature-list-with-switcher .active a:hover,
+.feature-list.feature-list-with-switcher .active a:active,
+.feature-list.feature-list-with-switcher .active a:visited {
+  color: white;
+}
+.feature-list.feature-list-with-switcher .active .list-group-item-text {
+  color: white;
+  background-color: #7ac143;
+}
+.feature-list.feature-list-with-switcher .active .list-group-item-text a,
+.feature-list.feature-list-with-switcher .active .list-group-item-text a:hover,
+.feature-list.feature-list-with-switcher .active .list-group-item-text a:active,
+.feature-list.feature-list-with-switcher .active .list-group-item-text a:visited {
+  color: white;
+}
+.feature-list.feature-list-with-switcher .list-group-item.active:hover {
+  border-color: #dfdfdf;
+}
 .section-separator {
   background-size: cover;
   height: 800px;
@@ -6603,18 +6626,27 @@ ul {
   margin-top: -180px;
 }
 #master-fader #master-fader-images {
+  z-index: 101;
   position: relative;
   top: 150;
+}
+#master-fader #master-fader-images img {
+  position: absolute;
 }
 #master-fader .copy-and-features {
   position: relative;
   top: 160;
 }
+#master-fader .copy-and-features .info-box {
+  margin-bottom: 40px;
+}
 #master-fader .copy-and-features .feature-list {
   float: left;
+  position: relative;
+  left: -50;
 }
 #master-fader .app-and-video {
-  margin-left: 18px;
+  margin-left: -32px;
 }
 #master-fader .app-and-video .video {
   margin-top: -35px;
