@@ -1,3 +1,9 @@
+exports.seo = {
+    title: "Mackie DL32R | 32-Channel Wireless Digital Mixer with iPad Control",
+    description: "Mackie’s DL32R 32-Channel Wireless Digital Mixer delivers complete wireless control, freeing you to get in the mix like never before.",
+    keywords: "digital mixing, wireless mixer, wireless digital mixer, iPad mixer, sound mixer, live sound mixer, digital audio mixer, live sound equipment, 32-channel mixer, 32-channel digital mixer, digital mixing console, digital mixing board, mackie digital mixer, studio live mixer"
+};
+
 exports.header = {
     support: {
         url: "support",
@@ -7,8 +13,9 @@ exports.header = {
 
 exports.body = {
     intro: {
-        tagline1: "Control Anything From",
-        tagline2: "Anywhere"
+        tagline1: "Control",
+        tagline2: "Everything<br>from anywhere",
+        text:"The Mackie DL32R is a powerful 32-channel digital mixer completely controlled wirelessly from Mackie’s intuitive Master FaderTM iPad&reg; app — MIX FREE"
     },
     hardware: {
         video: {
@@ -18,23 +25,24 @@ exports.body = {
         },
         mainCopy: {
             subtitle: "Hardware",
-            title: "All the Right I/O for Professionals",
-            text: "Bacon ipsum dolor sit amet ribeye pork belly sausage shankle salami, landjaeger pork chop brisket kielbasa pork loin meatball prosciutto hamburger shank. Pancetta venison drumstick tail cow meatball pork belly. Pastrami beef ribs filet mignon short ribs meatball kielbasa. Frankfurter leberkas turducken fatback, short ribs ham hock strip steak doner short loin pork shank. "
+            title: "All the right I/O for professionals",
+            text: "The DL32R features flexible, professional I/O in an incredibly compact design. So you can place it anywhere. It’s “Built-Like-A-Tank”, so it’ll stand up to life on the road. Plus, it remembers your settings for quick setup."
         },
         features:  {
             items: [
                 {
-                    imgUrl: "http://placehold.it/286x190",
+                    imgUrl: "public/images/hardware-1.jpg",
                     count: "32",
-                    text: "All-new Onyx+&trade; recallable mic press w/ wireless control"
+                    text: "All-new Onyx+&trade; recallable mic pres w/ wireless control"
                 },
                 {
-                    imgUrl: "http://placehold.it/280x190",
+                    imgUrl: "public/images/hardware-2.jpg",
                     count: "14",
                     text: "Fully-assignable XLR outputs"
                 }
             ]
-        }
+        },
+        dot: "Ultra-Compact 3U Rackmount Design"
     },
     wireless: {
         video: {
@@ -44,21 +52,22 @@ exports.body = {
         },
         mainCopy: {
             subtitle: "Wireless",
-            title: "Control Everything From Anywhere",
-            text: "Bacon ipsum dolor sit amet ribeye pork belly sausage shankle salami, landjaeger pork chop brisket kielbasa pork loin meatball prosciutto hamburger shank. Pancetta venison drumstick tail cow meatball pork belly. Pastrami beef ribs filet mignon short ribs meatball kielbasa. Frankfurter leberkas turducken fatback, short ribs ham hock strip steak doner short loin pork shank. "
+            title: "MIX FREE",
+            text: "From mic pre gain all the way through to control over your multi-track recording and playback, only the Mackie DL32R delivers complete wireless control over your 32-channel mix."
         },
         features: {
             items: [
                 {
                     title: "Collaborate",
-                    text: "Multiple engineers can work from a single mixer."
+                    text: "Multiple people (like you + a monitor engineer) can work from a single mixer"
                 },
                 {
-                    title: "Collaborate",
-                    text: "Multiple engineers can work from a single mixer."
+                    title: "Personal Monitor Mixing",
+                    text: "Savvy musicians just need an iOS device to mix their own monitors"
                 }
             ]
-        }
+        },
+        dot: "Freedom from FOH – mix from anywhere!"
     },
     recordPlay: {
         video: {
@@ -68,21 +77,22 @@ exports.body = {
         },
         mainCopy: {
             subtitle: "Record/Play",
-            title: "Control Everything From Anywhere",
-            text: "Bacon ipsum dolor sit amet ribeye pork belly sausage shankle salami, landjaeger pork chop brisket kielbasa pork loin meatball prosciutto hamburger shank. Pancetta venison drumstick tail cow meatball pork belly. Pastrami beef ribs filet mignon short ribs meatball kielbasa. Frankfurter leberkas turducken fatback, short ribs ham hock strip steak doner short loin pork shank. "
+            title: "Flexible multi-track recording & playback",
+            text: "Modern applications demand multi-track recording and playback. With the DL32R, you get flexibility, with two different ways to record, each with their own strengths."
         },
         features: {
             items: [
                 {
-                    title: "Collaborate",
-                    text: "Multiple engineers can work from a single mixer."
+                    title: "Unmatched Wireless Control",
+                    text: "No separate recording rig required. Get wireless control over 24x24 direct-to-disk recording/playback (32x32 coming soon!)"
                 },
                 {
-                    title: "Collaborate",
-                    text: "Multiple engineers can work from a single mixer."
+                    title: "Virtual Soundcheck",
+                    text: "Let the band sleep it off. Record them once and perform a time-saving virtual soundcheck"
                 }
             ]
-        }
+        },
+        dot: "Wirelessly control recordings and playback!"
     },
     dsp: {
         video: {
@@ -92,33 +102,33 @@ exports.body = {
         },
         mainCopy: {
             subtitle: "Digital Sound Processing (DSP)",
-            title: "Control Everything From Anywhere",
-            text: "Bacon ipsum dolor sit amet ribeye pork belly sausage shankle salami, landjaeger pork chop brisket kielbasa pork loin meatball prosciutto hamburger shank. Pancetta venison drumstick tail cow meatball pork belly. Pastrami beef ribs filet mignon short ribs meatball kielbasa. Frankfurter leberkas turducken fatback, short ribs ham hock strip steak doner short loin pork shank. "
+            title: "Small in size<br>Big in processing",
+            text: "DSP is what makes digital mixing possible. With the DL32R, you get powerful processing that replaces racks and racks of outboard gear, takes up WAY less space and is incredibly affordable."
         },
+        imgUrl: "public/images/dsp_ipad.png",
         features: {
             withCount: true,
             items: [
                 {
                     count: "36",
-                    title: "Collaborate",
-                    text: "Multiple engineers can work from a single mixer."
+                    text: "Input channels with 4-band PEQ +HPF/LPF, 31-band GEQ, comp/limiter and alignment delay*"
                 },
                 {
                     count: "28",
-                    title: "Collaborate",
-                    text: "Multiple engineers can work from a single mixer."
+                    text: "Output busses with 4-band PEQ +HPF/LPF, 31-band GEQ, comp/limiter and alignment delay*"
                 },
                 {
                     count: "03",
                     title: "Collaborate",
-                    text: "Multiple engineers can work from a single mixer."
+                    text: "Stereo FX processors with tons of great-sounding reverbs and delays plus dedicated sends & returns"
                 },
                 {
                     footnote: "*",
-                    text: "Return channels and subgroups and what not and compression."
+                    text: "Return channels and subgroups feature<br>PEQ and compression only."
                 }
             ]
-        }
+        },
+        dot: "Must-haves like VCAs, subgroups & matrix busses!"
     },
     masterFader: {
         video: {
@@ -128,26 +138,25 @@ exports.body = {
         },
         mainCopy: {
             subtitle: "Master Fader",
-            title: "Control Everything From Anywhere",
-            text: "Bacon ipsum dolor sit amet ribeye pork belly sausage shankle salami, landjaeger pork chop brisket kielbasa pork loin meatball prosciutto hamburger shank. Pancetta venison drumstick tail cow meatball pork belly. Pastrami beef ribs filet mignon short ribs meatball kielbasa. Frankfurter leberkas turducken fatback, short ribs ham hock strip steak doner short loin pork shank. "
+            title: "The most intuitive control app ever",
+            text: "The Master Fader control app is where everything happens. It’s the most intuitive control app on the market, proven at more than 2 million live mixes the world over."
         },
         features: {
             items: [
                 {
-                    title: "Collaborate",
-                    text: "Multiple engineers can work from a single mixer."
+                    text: "<b>Fast navigation</b> with view groups and overview"
                 },
                 {
                     title: "Collaborate",
-                    text: "Multiple engineers can work from a single mixer."
+                    text: "<b>Quick setup</b> with tons of factory and user-definable presets"
                 },
                 {
                     title: "Collaborate",
-                    text: "Multiple engineers can work from a single mixer."
+                    text: "Access limiting prevents unwanted adjustments"
                 },
                 {
                     title: "Collaborate",
-                    text: "Multiple engineers can work from a single mixer."
+                    text: "Complete offline operation for simple setup"
                 }
             ]
         }

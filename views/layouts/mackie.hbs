@@ -1,17 +1,14 @@
 <html>
     <head>
+        <title>{{content.seo.title}}</title>
+        <meta name="description" content="{{content.seo.description}}">
+        <meta name="keywords" content="{{content.seo.keywords}}">
         <link href="/public/css/mackie.css" rel="stylesheet">
-        <title>Express + Hbs</title>
     </head>
     <body>
         {{{body}}}
         <script src="/public/js/libs/jquery.js"></script>
         <script src="/public/js/libs/bootstrap.min.js"></script>
-        <script src="/public/js/libs/handlebars.js"></script>
-        <script src="/public/js/libs/underscore.js"></script>
-        <script src="/public/js/libs/backbone.js"></script>
-        <script src="/public/js/libs/backbone-nested.js"></script>
-
         <script>
             $(document).on('click', '.video', function () {
                 var src = "//www.youtube.com/embed/" + this.id + "?html5=1";

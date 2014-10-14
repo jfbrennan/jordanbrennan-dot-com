@@ -6163,9 +6163,38 @@ button.close {
     display: none !important;
   }
 }
+@font-face {
+  font-family: knockout_featherweight_48;
+  src: url('../fonts/Knockout-HTF48-Featherweight.otf');
+}
+@font-face {
+  font-family: knockout_lightweight_49;
+  src: url('../fonts/Knockout-HTF49-Liteweight.otf');
+}
+@font-face {
+  font-family: KnockoutJunior26;
+  src: url('../fonts/Knockout-HTF26-JuniorFlyweight.otf');
+}
+@font-face {
+  font-family: knockout_junior_28;
+  src: url('../fonts/Knockout-HTF28-JuniorFeatherwt.otf');
+}
+@font-face {
+  font-family: knockout_junior_32;
+  src: url('../fonts/Knockout-HTF32-JuniorCruiserwt.otf');
+}
+@font-face {
+  font-family: MetaNormal;
+  src: url('../fonts/meta_normal.ttf');
+}
+@font-face {
+  font-family: MetaBold;
+  src: url('../fonts/meta_bold.ttf');
+  font-weight: bold;
+}
 body {
-  background-color: #eeeeee;
-  font-family: "Lucida Grande", "Helvetic Neue", "Arial", sans-serif;
+  background-color: #231f20;
+  color: #231f20;
 }
 a,
 a:hover,
@@ -6182,9 +6211,25 @@ ul {
   max-width: 1280px;
   margin: 0 auto;
 }
+.product-img {
+  position: relative;
+}
+.info-box {
+  width: 440px;
+}
 .info-box > h5 {
   color: #777777;
   text-transform: uppercase;
+  font-family: knockout_junior_32;
+}
+.info-box > h2 {
+  text-transform: uppercase;
+  font-family: knockout_junior_28;
+  font-size: 55px;
+}
+.info-box > p {
+  font-family: MetaNormal;
+  font-size: 20px;
 }
 .relative {
   position: relative;
@@ -6192,21 +6237,24 @@ ul {
 .dot {
   position: relative;
   display: table;
-  padding: 50px;
   background: url("../images/dot.png") no-repeat center;
   background-size: cover;
+  font-family: knockout_junior_28;
 }
 .dot > h4 {
+  font-size: 35px;
   display: table-cell;
   vertical-align: middle;
   text-align: center;
   color: #ffffff;
 }
 .dot.dot-sm {
+  padding: 5px;
   width: 225px;
   height: 225px;
 }
 .dot.dot-lg {
+  padding: 50px;
   width: 275px;
   height: 275px;
 }
@@ -6216,6 +6264,10 @@ ul {
 .video {
   width: 170px;
 }
+.video p {
+  font-family: MetaBold;
+  font-size: 16px;
+}
 .video .runtime {
   color: #777777;
 }
@@ -6224,8 +6276,10 @@ ul {
   float: left;
 }
 .hardware-count .count {
-  color: #689430;
+  color: #7ac143;
   text-align: right;
+  font-family: KnockoutJunior26;
+  font-size: 66px;
 }
 .hardware-count > div {
   display: table-row;
@@ -6239,54 +6293,97 @@ ul {
   width: 340px;
 }
 .feature-list .list-group-item {
+  padding: 10px 40px;
   border-top-right-radius: 0;
   border-top-left-radius: 0;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
-  border-color: #eeeeee;
+  border-color: #dfdfdf;
   background-color: #f9f9f9;
+}
+.feature-list .list-group-item .list-group-item-heading {
+  font-family: MetaBold;
+  font-size: 16px;
+}
+.feature-list .list-group-item .list-group-item-text {
+  font-family: MetaNormal;
+  font-size: 16px;
 }
 .feature-list.feature-list-with-count {
   width: 565px;
 }
 .feature-list.feature-list-with-count .count {
-  color: #689430;
+  color: #7ac143;
 }
 .section-separator {
-  background: url("../images/header-bg.jpg") no-repeat center;
+  background-size: cover;
   height: 800px;
   position: relative;
   z-index: 1;
 }
 .section-separator.first {
-  margin-top: -180px;
+  background: url("../images/wireless_img.jpg") no-repeat center;
+  margin-top: -195px;
 }
 .section-separator.second {
-  margin-top: -180px;
+  background: url("../images/record-play_img.jpg") no-repeat center;
+  margin-top: -130px;
 }
 .section-separator.third {
-  margin-top: -180px;
+  background: url("../images/dsp_img.jpg") no-repeat center;
+  margin-top: -432px;
 }
 .section-separator.fourth {
+  background: url("../images/master_fader_img.jpg") no-repeat center;
   margin-top: -180px;
 }
-#header #nav-bar {
+.section-separator.fifth {
+  background: url("../images/gallery_1.jpg") no-repeat center;
+  margin-top: -180px;
+}
+#header {
+  position: fixed;
+  width: 1280px;
+  z-index: 1001;
   text-transform: uppercase;
+  color: white;
+  background-color: #7ac143;
+}
+#header a,
+#header a:hover,
+#header a:active,
+#header a:visited {
+  color: white;
+}
+#header #logo {
   padding: 10px;
-  color: white;
-  background-color: #689430;
 }
-#header #nav-bar a,
-#header #nav-bar a:hover,
-#header #nav-bar a:active,
-#header #nav-bar a:visited {
-  color: white;
+#header #navigation {
+  width: 85%;
+  float: left;
+  opacity: 80%;
 }
-#header #nav-bar #main-links {
+#header #main-links {
+  padding: 10px;
+  float: right;
+  font-family: knockout_featherweight_48;
+  font-size: 30px;
+}
+#header #sub-navigation {
+  width: 15%;
   float: left;
 }
-#header #nav-bar #resources {
-  float: right;
+#header #sub-navigation > div {
+  height: 60px;
+  text-align: center;
+  padding-top: 20px;
+}
+#header #sub-navigation #home-page {
+  background-color: gray;
+  border-left: 1px solid #555555;
+}
+#header #sub-navigation #resources {
+  border-left: 1px solid #6D8F37;
 }
 .nav-links {
   display: inline-block;
@@ -6302,14 +6399,10 @@ ul {
 .nav-links > li {
   padding: 0px 20px 0px 20px;
   display: inline-block;
-  border-left: 1px solid #777777;
-}
-.nav-links > li:first-child {
-  border-left: none;
 }
 #footer {
   color: white;
-  background-color: #689430;
+  background-color: #7ac143;
   padding-bottom: 50px;
 }
 #footer a,
@@ -6321,9 +6414,6 @@ ul {
 #footer-videos > h3 {
   padding-left: 20px;
 }
-#app-store-badge {
-  padding: 10px;
-}
 #video-thumbs > li {
   display: inline-block;
 }
@@ -6333,47 +6423,54 @@ ul {
 }
 #intro {
   height: 1000px;
+  padding-top: 180px;
   color: #ffffff;
-  background: url("../images/header-bg.jpg") no-repeat center;
+  background: url("../images/top_img.jpg") no-repeat center;
   background-size: cover;
 }
-#intro #dancing-man {
-  display: table;
-}
-#intro #dancing-man .stroked {
-  -webkit-text-stroke: 1px #ffffff;
-  text-stroke: 1px #ffffff;
-  color: rgba(0, 0, 0, 0);
-}
 #intro #mix-free {
+  position: relative;
+  left: 680px;
   font-weight: bold;
-  letter-spacing: -10;
   text-transform: uppercase;
-  margin-bottom: 200px;
-}
-#intro #mix-free > h2 {
-  font-size: 60px;
+  margin-bottom: 20px;
 }
 #intro #mix-free > h1 {
-  font-size: 200px;
+  font-family: knockout_lightweight_49;
 }
-#intro #mix-free > h1.stroked {
+#intro #mix-free .header-one {
+  font-size: 64px;
+}
+#intro #mix-free .header-one .stroked {
+  -webkit-text-stroke: 2px #ffffff;
+  text-stroke: 2px #ffffff;
+  color: rgba(0, 0, 0, 0);
+}
+#intro #mix-free .header-two {
+  font-size: 191px;
+  line-height: 120px;
   -webkit-text-stroke: 3px #ffffff;
   text-stroke: 3px #ffffff;
   color: rgba(0, 0, 0, 0);
 }
+#intro #mix-free .header-three {
+  font-size: 94px;
+  line-height: 80px;
+}
 #intro #intro-text {
-  margin: 0 auto;
-  width: 400px;
+  position: relative;
+  left: 680px;
+  width: 480px;
+  font-size: 24px;
 }
 #hardware {
   background: url("../images/hardware-shape.png") no-repeat center;
-  height: 698px;
+  height: 801px;
   margin-top: -180px;
 }
 #hardware .copy-and-features {
   position: relative;
-  top: 80;
+  top: 140;
 }
 #hardware .mixer-img {
   position: relative;
@@ -6389,8 +6486,8 @@ ul {
 }
 #wireless {
   background: url("../images/wireless-shape.png") no-repeat center;
-  height: 698px;
-  margin-top: -180px;
+  height: 731px;
+  margin-top: -245px;
 }
 #wireless .copy-and-features {
   position: relative;
@@ -6416,8 +6513,11 @@ ul {
 }
 #record-play {
   background: url("../images/record-play-shape.png") no-repeat center;
-  height: 719px;
-  margin-top: -180px;
+  height: 762px;
+  margin-top: -190px;
+}
+#record-play .product-img {
+  top: 20px;
 }
 #record-play .dot {
   top: -45;
@@ -6444,21 +6544,33 @@ ul {
 #dsp .copy-and-features .video {
   text-align: left;
 }
+#dsp .feature-list-with-count {
+  position: relative;
+  top: 40;
+}
 #dsp .dot {
-  top: -100;
-  left: 500;
+  top: -140;
+  left: 240;
+  z-index: 100;
+}
+#dsp .product-img {
+  top: -80;
+  left: -50;
   z-index: 101;
 }
 #master-fader {
   background: url("../images/master-fader-shape.png") no-repeat center;
-  height: 896px;
+  height: 857px;
   margin-top: -180px;
 }
-#master-fader .dot {
-  top: 500;
-  left: 300;
+#master-fader #master-fader-images {
+  position: relative;
+  top: 150;
 }
 #master-fader .copy-and-features {
   position: relative;
   top: 160;
+}
+#master-fader .copy-and-features .feature-list {
+  float: left;
 }
