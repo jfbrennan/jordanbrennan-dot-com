@@ -6192,6 +6192,11 @@ button.close {
   src: url('../fonts/meta_bold.ttf');
   font-weight: bold;
 }
+@font-face {
+  font-family: MetaBook;
+  src: url('../fonts/meta_book.ttf');
+  font-weight: bold;
+}
 body {
   background-color: #231f20;
   color: #231f20;
@@ -6218,11 +6223,13 @@ ul {
   width: 440px;
 }
 .info-box > h5 {
-  color: #777777;
+  color: #939598;
   text-transform: uppercase;
   font-family: knockout_junior_32;
+  font-size: 18px;
 }
 .info-box > h2 {
+  margin-top: 0;
   text-transform: uppercase;
   font-family: knockout_junior_28;
   font-size: 55px;
@@ -6264,30 +6271,28 @@ ul {
 .video {
   width: 170px;
 }
+.video .play-video {
+  width: 49px;
+  height: 49px;
+  position: relative;
+  top: 70;
+  left: 50%;
+  margin-left: -24.5px;
+  display: inline-block;
+  background: url("../images/play_btn_green.png") no-repeat;
+}
+.video .play-video:hover {
+  background: url("../images/play_btn_white.png") no-repeat;
+}
 .video p {
   font-family: MetaBold;
   font-size: 16px;
+  margin-bottom: 0;
 }
 .video .runtime {
+  position: relative;
+  top: -3;
   color: #777777;
-}
-.hardware-count {
-  width: 280px;
-  float: left;
-}
-.hardware-count .count {
-  color: #7ac143;
-  text-align: right;
-  font-family: KnockoutJunior26;
-  font-size: 66px;
-}
-.hardware-count > div {
-  display: table-row;
-}
-.hardware-count > div > div,
-.hardware-count > div h3 {
-  display: table-cell;
-  vertical-align: middle;
 }
 .feature-list {
   width: 340px;
@@ -6313,6 +6318,8 @@ ul {
   width: 565px;
 }
 .feature-list.feature-list-with-count .count {
+  font-family: KnockoutJunior26;
+  font-size: 66px;
   color: #7ac143;
 }
 .section-separator {
@@ -6348,6 +6355,7 @@ ul {
   text-transform: uppercase;
   color: white;
   background-color: #7ac143;
+  background-color: rgba(122, 193, 67, 0.9);
 }
 #header a,
 #header a:hover,
@@ -6356,15 +6364,14 @@ ul {
   color: white;
 }
 #header #logo {
-  padding: 10px;
+  padding: 10px 10px 10px 30px;
 }
 #header #navigation {
   width: 85%;
   float: left;
-  opacity: 80%;
 }
 #header #main-links {
-  padding: 10px;
+  padding: 20px 10px;
   float: right;
   font-family: knockout_featherweight_48;
   font-size: 30px;
@@ -6372,11 +6379,19 @@ ul {
 #header #sub-navigation {
   width: 15%;
   float: left;
+  color: white;
+  background-color: #7ac143;
+}
+#header #sub-navigation a,
+#header #sub-navigation a:hover,
+#header #sub-navigation a:active,
+#header #sub-navigation a:visited {
+  color: white;
 }
 #header #sub-navigation > div {
-  height: 60px;
+  height: 42px;
   text-align: center;
-  padding-top: 20px;
+  padding-top: 13px;
 }
 #header #sub-navigation #home-page {
   background-color: gray;
@@ -6433,18 +6448,14 @@ ul {
   left: 680px;
   font-weight: bold;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 #intro #mix-free > h1 {
   font-family: knockout_lightweight_49;
 }
-#intro #mix-free .header-one {
-  font-size: 64px;
-}
-#intro #mix-free .header-one .stroked {
-  -webkit-text-stroke: 2px #ffffff;
-  text-stroke: 2px #ffffff;
-  color: rgba(0, 0, 0, 0);
+#intro #mix-free img {
+  padding-left: 4px;
+  margin-bottom: 40px;
 }
 #intro #mix-free .header-two {
   font-size: 191px;
@@ -6458,6 +6469,7 @@ ul {
   line-height: 80px;
 }
 #intro #intro-text {
+  font-family: MetaNormal;
   position: relative;
   left: 680px;
   width: 480px;
@@ -6484,6 +6496,31 @@ ul {
   position: relative;
   top: -120;
 }
+#hardware .hardware-count {
+  width: 287px;
+  float: left;
+  margin-right: 2px;
+}
+#hardware .hardware-count .count {
+  color: #7ac143;
+  text-align: right;
+  font-family: KnockoutJunior26;
+  font-size: 66px;
+  padding-right: 15px;
+  padding-left: 50px;
+}
+#hardware .hardware-count > div {
+  display: table-row;
+}
+#hardware .hardware-count > div > p,
+#hardware .hardware-count > div h3 {
+  padding-top: 10px;
+  display: table-cell;
+  vertical-align: middle;
+}
+#hardware .hardware-count > div > p {
+  font-family: MetaBook;
+}
 #wireless {
   background: url("../images/wireless-shape.png") no-repeat center;
   height: 731px;
@@ -6496,6 +6533,8 @@ ul {
 #wireless .copy-and-features .video {
   float: right;
   text-align: left;
+  position: relative;
+  left: 50;
 }
 #wireless .feature-list {
   position: relative;
@@ -6549,12 +6588,12 @@ ul {
   top: 40;
 }
 #dsp .dot {
-  top: -140;
-  left: 240;
+  top: -180;
+  left: 230;
   z-index: 100;
 }
 #dsp .product-img {
-  top: -80;
+  top: 20;
   left: -50;
   z-index: 101;
 }
@@ -6573,4 +6612,10 @@ ul {
 }
 #master-fader .copy-and-features .feature-list {
   float: left;
+}
+#master-fader .app-and-video {
+  margin-left: 18px;
+}
+#master-fader .app-and-video .video {
+  margin-top: -35px;
 }

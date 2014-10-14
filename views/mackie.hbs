@@ -3,10 +3,7 @@
     {{#with content.body.intro}}
         <div id="intro">
             <div id="mix-free">
-                <h1 class="header-one">
-                    <span class="stroked">DL</span>
-                    <span>32R</span>
-                </h1>
+                <img src="public/images/DL32R-logo.png">
                 <h1 class="stroked header-two">{{{tagline1}}}</h1>
                 <h1 class="header-three">{{{tagline2}}}</h1>
             </div>
@@ -28,7 +25,7 @@
                             <img src="{{imgUrl}}" width="287" height="191">
                             <div>
                                 <h3 class="count">{{{count}}}</h3>
-                                <div>{{{text}}}</div>
+                                <p>{{{text}}}</p>
                             </div>
                         </div>
                     {{/each}}
@@ -91,7 +88,7 @@
                 <div class="copy-and-features">
                     {{> info-box mainCopy}}
                     {{> feature-list features}}
-                    <div class="pull-left">
+                    <div class="pull-left app-and-video">
                         <a href="#app-store">
                             <img id="app-store-badge" src="public/images/app-store-badge.svg">
                         </a>

@@ -2,7 +2,7 @@
     {{#each items}}
         <li class="list-group-item">
             <h3 class="pull-left {{#if count}}count{{/if}} {{#if footnote}}footnote{{/if}}">{{{footnote}}}{{{count}}}</h3>
-            <h4 class="list-group-item-heading">{{{title}}}</h4>
+            {{#unless count}}<h4 class="list-group-item-heading">{{{title}}}</h4>{{/unless}}
             <p class="list-group-item-text">{{{text}}}</p>
         </li>
     {{/each}}

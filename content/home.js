@@ -33,12 +33,12 @@ exports.body = {
                 {
                     imgUrl: "public/images/hardware-1.jpg",
                     count: "32",
-                    text: "All-new Onyx+&trade; recallable mic pres w/ wireless control"
+                    text: "All-new Onyx+&trade;<br>recallable mic pres w/<br/>wireless control"
                 },
                 {
                     imgUrl: "public/images/hardware-2.jpg",
                     count: "14",
-                    text: "Fully-assignable XLR outputs"
+                    text: "Fully-assignable<br>XLR outputs"
                 }
             ]
         },
