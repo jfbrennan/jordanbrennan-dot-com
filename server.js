@@ -23,11 +23,11 @@ app.get('/', function (req, res) {
 });
 
 // Mackie
-app.get('/demo', function (req, res) {
-    if (req.query.client === "mackie") {
-        res.render('mackie', {content: content, layout: "mackie"});
-    }
-    else {
-        res.status(404).send('Not found');
-    }
-});;
+//app.get('/demo', function (req, res) {
+//    if (req.query.client === "mackie") {
+//        res.render('mackie', {content: content, layout: "mackie"});
+//    }
+//    else {
+//        res.status(404).send('Not found');
+//    }
+//});;
