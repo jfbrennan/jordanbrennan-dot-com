@@ -33,13 +33,13 @@ exports.home = {
         linkedIn: {
             publicUrl: "http://www.linkedin.com/pub/jordan-brennan/44/9b3/931",
             img: {
-                url: "public/images/linkedin-logo-big.png"
+                url: "//d2o8q0ogrzkcnd.cloudfront.net/images/linkedin-logo-big.png"
             }
         },
         resume: {
             url: "public/docs/jordan_brennan_resume.pdf",
             img: {
-                url: "public/images/resume-icon.png"
+                url: "//d2o8q0ogrzkcnd.cloudfront.net/images/resume-icon.png"
             }
         }
     }
