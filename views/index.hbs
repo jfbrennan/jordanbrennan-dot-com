@@ -1,26 +1,6 @@
 <div id="sidebar">
     <h1>Jordan Brennan</h1>
     <div class="nav">
-        <select id="work-experience-selector">
-            <option class="default">Work Experience...</option>
-            {{#each content.workExperience}}
-                <option value="{{@index}}">{{name}}</option>
-            {{/each}}
-        </select>
-    </div>
-    <div class="nav">
         <a href="{{content.sidebar.linkedIn.publicUrl}}" target="_blank"><img src="{{content.sidebar.linkedIn.img.url}}" width="100"></a>
-    </div>
-    <div class="nav">
-        <a href="{{content.sidebar.resume.url}}"><img src="{{content.sidebar.resume.img.url}}" width="100"></a>
-    </div>
-</div>
-<div id="work-experience-showcase" class="hidden">
-    <div id="work-experience-info">
-        <h2></h2>
-        <p></p>
-    </div>
-    <div id="work-experience-iframe-wrapper">
-        <iframe id="work-experience-iframe"></iframe>
     </div>
 </div>
